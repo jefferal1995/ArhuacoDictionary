@@ -19,6 +19,8 @@ target 'ArhuacoDictionary' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'react-native-sqlite-storage', :path => '../node_modules/react-native-sqlite-storage'
+
   target 'ArhuacoDictionaryTests' do
     inherit! :complete
     # Pods for testing
